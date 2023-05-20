@@ -11,6 +11,13 @@
     <string name="alamat_kos">Jalan Babakan Ciamis, Bojongsoang</string>
     <string name="reset">Reset</string>
     <string name="edit">Ubah</string>
+    <string name="hapus">Hapus</string>
     <string name="tambah">Tambah</string>
     <string name="nomorKamar">Kamar No.45</string>
+    <string name="lunas">Lunas</string>
+    <string name="pendapatan">Pendapatan Bulan ini:</string>
+    <string name="kekurangan">Kekurangan Bulan ini:</string>
+    <string name="pendapatan_uang">Rp5000.000</string>
+    <string name="kekurangan_uang">Rp500.000</string>
+    <string name="btn_kontak">Hubungi</string>
 </resources>
