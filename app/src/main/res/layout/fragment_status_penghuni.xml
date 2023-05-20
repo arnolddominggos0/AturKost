@@ -7,5 +7,5 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-    tools:context=".ui.DataTamu"
-    tools:listitem = "@layout/list_tamu" />
+    tools:context=".MainActivity"
+    tools:listitem = "@layout/status_penghuni" />

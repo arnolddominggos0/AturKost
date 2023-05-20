@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.Home">
+    tools:context=".ui.home.Home">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -75,6 +75,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
+            android:textStyle="bold"
             android:text="@string/pendapatan_uang"
             android:textColor="@color/material_dynamic_primary80"
             app:layout_constraintStart_toStartOf="@+id/tvPendapatan"
@@ -85,9 +86,25 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
+            android:textStyle="bold"
             android:text="@string/kekurangan_uang"
             android:textColor="@color/red"
             app:layout_constraintStart_toStartOf="@+id/tvKekurangan"
             app:layout_constraintTop_toBottomOf="@+id/tvKekurangan" />
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigationView"
+            style="@style/Base.Widget.Material3.BottomNavigationView."
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:background="@drawable/background_nav_bottom"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:menu="@menu/bottom_nav" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>

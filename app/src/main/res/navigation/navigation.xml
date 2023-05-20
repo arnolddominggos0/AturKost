@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/home">
+    <fragment
+        android:id="@+id/home"
+        android:name="org.d3if3024.aturkost.ui.home.Home"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_home_to_tagihan"
+            app:destination="@id/tagihan" />
+        <action
+            android:id="@+id/action_home_to_dataPenghuni"
+            app:destination="@id/statusPenghuni" />
+        <action
+            android:id="@+id/action_home_to_daftarPenghuni"
+            app:destination="@id/daftarPenghuni" />
+    </fragment>
+    <fragment
+        android:id="@+id/tagihan"
+        android:name="org.d3if3024.aturkost.ui.tagihan.Tagihan"
+        android:label="Tagihan" />
+    <fragment
+        android:id="@+id/statusPenghuni"
+        android:name="org.d3if3024.aturkost.ui.Penghuni.StatusPenghuni"
+        android:label="fragment_status_penghuni"
+        tools:layout="@layout/fragment_status_penghuni" >
+        <argument
+            android:name="statusPembayaran"
+            app:argType="org.d3if3024.aturkost.model.StatusPembayaran" />
+    </fragment>
+    <fragment
+        android:id="@+id/daftarPenghuni"
+        android:name="org.d3if3024.aturkost.ui.Penghuni.DaftarPenghuni"
+        android:label="fragment_daftar_penghuni"
+        tools:layout="@layout/fragment_daftar_penghuni" >
+        <action
+            android:id="@+id/action_daftarPenghuni_to_infoPenghuniFragment"
+            app:destination="@id/infoPenghuniFragment" />
+        <action
+            android:id="@+id/action_daftarPenghuni_to_tambahPenghuniFragment"
+            app:destination="@id/tambahPenghuniFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/infoPenghuniFragment"
+        android:name="org.d3if3024.aturkost.ui.Penghuni."
+        android:label="InfoPenghuniFragment" />
+    <fragment
+        android:id="@+id/tambahPenghuniFragment"
+        android:name="org.d3if3024.aturkost.ui.Penghuni.TambahPenghuni"
+        android:label="TambahPenghuniFragment" />
+</navigation>
