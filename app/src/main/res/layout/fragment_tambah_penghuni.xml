@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            style="@style/TextInputLayout.AdjacentLabel"
+            android:id="@+id/namaPenghuni_hint"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintVertical_bias=".3"
+            app:layout_constraintWidth_percent=".8"
+            app:layout_constraintHorizontal_bias=".5"
+            android:hint="@string/nama_penghuni"
+            android:paddingLeft="15dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:drawablePadding="8dp"
+            android:drawableLeft="@drawable/baseline_account_circle_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+        </EditText>
+
+        <EditText
+            android:id="@+id/nomorKamar_hint"
+            style="@style/TextInputLayout.AdjacentLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:drawableLeft="@drawable/baseline_door_front_24"
+            android:drawablePadding="8dp"
+            android:hint="@string/nomor_kamar"
+            android:paddingLeft="15dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias=".5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/namaPenghuni_hint"
+            app:layout_constraintVertical_bias="0"
+            app:layout_constraintWidth=".8"
+            app:layout_constraintWidth_percent=".8"></EditText>
+
+        <EditText
+            style="@style/TextInputLayout.AdjacentLabel"
+            android:id="@+id/biayaKamar_hint"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintVertical_bias="0"
+            app:layout_constraintHorizontal_bias=".5"
+            app:layout_constraintWidth_percent=".8"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="15dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:inputType="number"
+            android:drawableLeft="@drawable/baseline_payments_24"
+            android:drawablePadding="8dp"
+            android:hint="@string/biaya_kamar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/nomorKamar_hint">
+        </EditText>
+
+
+        <EditText
+            style="@style/TextInputLayout.AdjacentLabel"
+            android:id="@+id/nomorPenghuni_hint"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintVertical_bias="0"
+            app:layout_constraintHorizontal_bias=".5"
+            app:layout_constraintWidth_percent=".8"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="15dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:drawableLeft="@drawable/baseline_local_phone_24"
+            android:drawablePadding="8dp"
+            android:hint="@string/nomorPenghuni"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/biayaKamar_hint">
+        </EditText>
+
+        <EditText
+            android:id="@+id/tanggalMasukPenghuni_hint"
+            style="@style/TextInputLayout.AdjacentLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:drawableLeft="@drawable/baseline_calendar_month_24"
+            android:drawablePadding="8dp"
+            android:hint="@string/tanggal_masuk"
+            android:paddingLeft="15dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            app:flow_horizontalBias=".5"
+            app:flow_verticalBias="0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/nomorPenghuni_hint"
+            app:layout_constraintWidth_percent=".8"></EditText>
+
+        <Button
+            android:id="@+id/btnTambah"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/tambah"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tanggalMasukPenghuni_hint" />
+
+
+        <Button
+            android:id="@+id/btnReset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/reset"
+            app:layout_constraintEnd_toEndOf="@id/tanggalMasukPenghuni_hint"
+            app:layout_constraintStart_toEndOf="@+id/btnTambah"
+            app:layout_constraintTop_toBottomOf="@+id/tanggalMasukPenghuni_hint" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+

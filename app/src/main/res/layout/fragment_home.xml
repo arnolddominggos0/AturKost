@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.Home">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/homeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/home"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/namaKos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:text="@string/nama_kos"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/homeTextView" />
+
+        <TextView
+            android:id="@+id/alamatKos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/alamat_kos"
+            app:layout_constraintEnd_toStartOf="@+id/tvKekurangan"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/namaKos" />
+
+        <TextView
+            android:id="@+id/tvPendapatan"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginTop="92dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/pendapatan"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/tvKekurangan"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/alamatKos" />
+
+        <TextView
+            android:id="@+id/tvKekurangan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="92dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/kekurangan"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tvPendapatan"
+            app:layout_constraintTop_toBottomOf="@+id/alamatKos" />
+
+        <TextView
+            android:id="@+id/pendapatanUang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/pendapatan_uang"
+            android:textColor="@color/material_dynamic_primary80"
+            app:layout_constraintStart_toStartOf="@+id/tvPendapatan"
+            app:layout_constraintTop_toBottomOf="@+id/tvPendapatan" />
+
+        <TextView
+            android:id="@+id/kekuranganUang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/kekurangan_uang"
+            android:textColor="@color/red"
+            app:layout_constraintStart_toStartOf="@+id/tvKekurangan"
+            app:layout_constraintTop_toBottomOf="@+id/tvKekurangan" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
