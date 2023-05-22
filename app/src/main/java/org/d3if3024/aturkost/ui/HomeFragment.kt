@@ -21,28 +21,8 @@ class HomeFragment : Fragment () {
         binding = FragmentHomeBinding.inflate(inflater, container, false)
         return binding.root
     }
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        when (item.itemId) {
-            R.id.menu_home -> {
-                findNavController().navigate(
-                    R.id.action_homeFragment_to_daftarPenghuniFragment2
 
-                )
-                return true
-            }
-
-            R.id.menu_daftarPenghuni -> {
-                findNavController().navigate(
-                    R.id.action_daftarPenghuniFragment_to_tambahPenghuniFragment)
-                return true
-            }
-
-            R.id.menu_tagihan -> {
-                findNavController().navigate(
-                    R.id.action_homeFragment_to_tagihanFragment
-                )
-            }
-        }
-        return super.onOptionsItemSelected(item)
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
     }
 }

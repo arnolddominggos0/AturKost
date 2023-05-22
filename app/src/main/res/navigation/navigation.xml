@@ -14,8 +14,9 @@
             android:id="@+id/action_homeFragment_to_tagihanFragment"
             app:destination="@id/tagihanFragment" />
         <action
-            android:id="@+id/action_homeFragment_to_daftarPenghuniFragment2"
+            android:id="@+id/action_homeFragment_to_daftarPenghuniFragment"
             app:destination="@id/daftarPenghuniFragment" />
+
     </fragment>
     <fragment
         android:id="@+id/daftarPenghuniFragment"
@@ -27,6 +28,9 @@
         <action
             android:id="@+id/action_daftarPenghuniFragment_to_tambahPenghuniFragment"
             app:destination="@id/tambahPenghuniFragment" />
+        <argument
+            android:name="idPenghuni"
+            app:argType="integer" />
     </fragment>
     <fragment
         android:id="@+id/detailPenghuniFragment"

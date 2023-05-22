@@ -8,12 +8,15 @@ interface PenghuniDao {
     @Insert
     fun insert(bmi: Penghuni)
 
-    @Query("SELECT * FROM penghuni ORDER BY id DESC LIMIT 1")
+    @Query("SELECT * FROM penghuni ORDER BY idPenghuni DESC LIMIT 1")
     fun getLastBmi(): LiveData<Penghuni?>
 
     @Query("SELECT * FROM penghuni")
     fun getAllPenghuni(): LiveData<List<Penghuni>>
 
-    @Query("SELECT * FROM penghuni WHERE id = :id")
+    @Query("SELECT * FROM penghuni WHERE idPenghuni = :id")
     fun getPenghuniById(id: Long): LiveData<Penghuni>
+
+    @Query("DELETE FROM penghuni")
+    fun clearData()
 }

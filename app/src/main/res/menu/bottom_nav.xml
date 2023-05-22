@@ -2,13 +2,13 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item android:title="Home"
-        android:id="@+id/menu_home"
+        android:id="@+id/homeFragment"
         android:icon="@drawable/baseline_home_24"/>
 
     <item android:title="Daftar Penghuni"
-        android:id="@+id/menu_daftarPenghuni"
+        android:id="@+id/daftarPenghuniFragment"
         android:icon="@drawable/baseline_account_circle_24"/>
     <item android:title="Tagihan"
-        android:id="@+id/menu_tagihan"
+        android:id="@+id/tagihanFragment"
         android:icon="@drawable/baseline_payment_24"/>
 </menu>

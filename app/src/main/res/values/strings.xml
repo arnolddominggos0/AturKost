@@ -17,4 +17,6 @@
     <string name="lunas">Lunas</string>
     <string name="btn_kontak">Hubungi via WhatsApp</string>
     <string name="belum_ada_data">Belum ada Penghuni</string>
+    <string name="konfirmasi_hapus">Yakin untuk hapus?</string>
+    <string name="batal">Batal</string>
 </resources>

@@ -1,3 +1,5 @@
+package org.d3if3024.aturkost.ui.Penghuni.DataPenghuni
+
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -61,10 +63,3 @@ class DaftarPenghuniFragment : Fragment() {
         }
     }
 }
-
-
-
-
-
-
-

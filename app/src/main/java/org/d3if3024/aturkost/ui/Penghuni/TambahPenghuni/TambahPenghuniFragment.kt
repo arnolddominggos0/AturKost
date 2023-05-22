@@ -13,11 +13,7 @@ import org.d3if3024.aturkost.db.Penghuni
 
 class TambahPenghuniFragment : Fragment() {
     private lateinit var binding: FragmentTambahPenghuniBinding
-    private val viewModel: TambahPenghuniViewModel by lazy {
-        val db = AppDb.getInstance(requireContext())
-        val factory = TambahPenghuniViewModelFactory(db.dao)
-        ViewModelProvider(this, factory)[TambahPenghuniViewModel::class.java]
-    }
+    private lateinit var viewModel: TambahPenghuniViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -30,6 +26,10 @@ class TambahPenghuniFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        val db = AppDb.getInstance(requireContext())
+        val dao = db.dao
+        val factory = TambahPenghuniViewModelFactory(dao)
+        viewModel = ViewModelProvider(this, factory).get(TambahPenghuniViewModel::class.java)
 
         binding.btnSimpan.setOnClickListener {
             val nama = binding.namaPenghuniHint.text.toString()
@@ -38,7 +38,7 @@ class TambahPenghuniFragment : Fragment() {
             val biayaKamar = binding.biayaKamarHint.text.toString()
 
             val penghuni = Penghuni(
-                id = 0,
+                idPenghuni = 0,
                 nama = nama,
                 nomorKamar = nomorKamar,
                 nomorHp = nomorHp,

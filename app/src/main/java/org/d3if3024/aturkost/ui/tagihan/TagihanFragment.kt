@@ -10,10 +10,4 @@ class TagihanFragment:Fragment(){
     private lateinit var binding: FragmentTagihanBinding
     private lateinit var viewModel: FragmentViewHolder
     private lateinit var adapter: PenghuniAdapter
-
-
-
-
-
-
 }

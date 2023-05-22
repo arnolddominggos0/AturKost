@@ -10,7 +10,7 @@ import org.d3if3024.aturkost.databinding.FragmentDetailPenghuniBinding
 class DetailPenghuniFragment : Fragment() {
     private lateinit var binding: FragmentDetailPenghuniBinding
     private lateinit var viewModel: DetailPenghuniViewModel
-    private var id: Long = 0
+    private var idPenghuni: Long = 0
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -26,7 +26,7 @@ class DetailPenghuniFragment : Fragment() {
 
 
         val args = DetailPenghuniFragmentArgs.fromBundle(requireArguments())
-        id = args.id
+        idPenghuni = args.id
 
         viewModel.penghuni.observe(viewLifecycleOwner) {
             // Menampilkan data penghuni yang ditemukan
