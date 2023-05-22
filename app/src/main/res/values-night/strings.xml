@@ -7,17 +7,14 @@
     <string name="nomor_kamar">Masukkan Nomor Kamar</string>
     <string name="home">Home</string>
     <string name="nomorPenghuni">Masukkan No.HP Penghuni</string>
-    <string name="nama_kos">Kos Arnold</string>
-    <string name="alamat_kos">Jalan Babakan Ciamis, Bojongsoang</string>
-    <string name="reset">Reset</string>
+    <string name="about">Aplikasi Atur Kost merupakan aplikasi Android untuk mengatur kost yang dilakukan oleh pemilik kost.\nUntuk mengetahui berapa jumlah penghuni dan berapa penghuni yang belum membayar tagihan.Temukan kodenya di https://github.com/arnolddominggos0/AturKost.git \nAll rights reserved</string>
     <string name="edit">Ubah</string>
+    <string name="reset">Reset</string>
     <string name="hapus">Hapus</string>
-    <string name="tambah">Tambah</string>
+    <string name="tambah">Tambah Penghuni</string>
+    <string name="simpan">Simpan</string>
     <string name="nomorKamar">Kamar No.45</string>
     <string name="lunas">Lunas</string>
-    <string name="pendapatan">Pendapatan Bulan ini:</string>
-    <string name="kekurangan">Kekurangan Bulan ini:</string>
-    <string name="pendapatan_uang">Rp5000.000</string>
-    <string name="kekurangan_uang">Rp500.000</string>
-    <string name="btn_kontak">Hubungi</string>
+    <string name="btn_kontak">Hubungi via WhatsApp</string>
+    <string name="belum_ada_data">Belum ada Penghuni</string>
 </resources>

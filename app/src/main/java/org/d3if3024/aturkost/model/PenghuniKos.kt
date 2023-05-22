@@ -1,13 +1,15 @@
 package org.d3if3024.aturkost.model
 
-import java.time.LocalDate
+import androidx.room.Entity
+import androidx.room.PrimaryKey
 
+@Entity(tableName = "penghuni_kos")
 data class PenghuniKos(
-    val id: Int,
+    @PrimaryKey val id: Int,
     val nama: String,
-    val alamat: String,
-    val nomorTelepon: String,
-    val nomorKamar: Int,
-    val biayaKamar: Double,
-    val tanggalMasuk: LocalDate
+    val nomorKamar: String,
+    val biayaKamar: String,
+    val noHp: String,
 )
+
+

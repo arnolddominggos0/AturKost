@@ -3,53 +3,45 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/navigation"
-    app:startDestination="@id/home">
+    app:startDestination="@id/homeFragment">
+
     <fragment
-        android:id="@+id/home"
-        android:name="org.d3if3024.aturkost.ui.home.Home"
+        android:id="@+id/homeFragment"
+        android:name="org.d3if3024.aturkost.ui.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" >
         <action
-            android:id="@+id/action_home_to_tagihan"
-            app:destination="@id/tagihan" />
+            android:id="@+id/action_homeFragment_to_tagihanFragment"
+            app:destination="@id/tagihanFragment" />
         <action
-            android:id="@+id/action_home_to_dataPenghuni"
-            app:destination="@id/statusPenghuni" />
-        <action
-            android:id="@+id/action_home_to_daftarPenghuni"
-            app:destination="@id/daftarPenghuni" />
+            android:id="@+id/action_homeFragment_to_daftarPenghuniFragment2"
+            app:destination="@id/daftarPenghuniFragment" />
     </fragment>
     <fragment
-        android:id="@+id/tagihan"
-        android:name="org.d3if3024.aturkost.ui.tagihan.Tagihan"
-        android:label="Tagihan" />
-    <fragment
-        android:id="@+id/statusPenghuni"
-        android:name="org.d3if3024.aturkost.ui.Penghuni.StatusPenghuni"
-        android:label="fragment_status_penghuni"
-        tools:layout="@layout/fragment_status_penghuni" >
-        <argument
-            android:name="statusPembayaran"
-            app:argType="org.d3if3024.aturkost.model.StatusPembayaran" />
-    </fragment>
-    <fragment
-        android:id="@+id/daftarPenghuni"
-        android:name="org.d3if3024.aturkost.ui.Penghuni.DaftarPenghuni"
-        android:label="fragment_daftar_penghuni"
-        tools:layout="@layout/fragment_daftar_penghuni" >
+        android:id="@+id/daftarPenghuniFragment"
+        android:name="org.d3if3024.aturkost.ui.Penghuni.DataPenghuni.DaftarPenghuniFragment"
+        android:label="DaftarPenghuniFragment" >
         <action
-            android:id="@+id/action_daftarPenghuni_to_infoPenghuniFragment"
-            app:destination="@id/infoPenghuniFragment" />
+            android:id="@+id/action_daftarPenghuniFragment_to_detailPenghuniFragment"
+            app:destination="@id/detailPenghuniFragment" />
         <action
-            android:id="@+id/action_daftarPenghuni_to_tambahPenghuniFragment"
+            android:id="@+id/action_daftarPenghuniFragment_to_tambahPenghuniFragment"
             app:destination="@id/tambahPenghuniFragment" />
     </fragment>
     <fragment
-        android:id="@+id/infoPenghuniFragment"
-        android:name="org.d3if3024.aturkost.ui.Penghuni."
-        android:label="InfoPenghuniFragment" />
+        android:id="@+id/detailPenghuniFragment"
+        android:name="org.d3if3024.aturkost.ui.Penghuni.DetailPenghuni.DetailPenghuniFragment"
+        android:label="DetailPenghuniFragment" >
+        <argument
+            android:name="id"
+            app:argType="long" />
+    </fragment>
+    <fragment
+        android:id="@+id/tagihanFragment"
+        android:name="org.d3if3024.aturkost.ui.tagihan.TagihanFragment"
+        android:label="TagihanFragment" />
     <fragment
         android:id="@+id/tambahPenghuniFragment"
-        android:name="org.d3if3024.aturkost.ui.Penghuni.TambahPenghuni"
+        android:name="org.d3if3024.aturkost.ui.Penghuni.TambahPenghuni.TambahPenghuniFragment"
         android:label="TambahPenghuniFragment" />
 </navigation>

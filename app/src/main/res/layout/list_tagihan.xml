@@ -23,29 +23,41 @@
         android:layout_marginStart="8dp"
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline"
-        app:layout_constraintStart_toEndOf="@id/iconProfile"
+        app:layout_constraintStart_toEndOf="@+id/iconProfile"
         tools:text="Asep Gumilang"/>
 
     <TextView
         android:id="@+id/tvLunas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintStart_toEndOf="@id/namaTextView"
+        app:layout_constraintStart_toEndOf="@+id/namaTextView"
         android:textSize="18sp"
         android:textColor="@color/green"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
         tools:text="Lunas"/>
 
+
+    <TextView
+        android:id="@+id/tvHarga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="2dp"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/nomorKamar"
+        app:layout_constraintTop_toTopOf="@+id/guideline"
+        tools:text="Rp 5000.000"/>
 
     <TextView
         android:id="@+id/nomorKamar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
-        app:layout_constraintStart_toStartOf="@id/namaTextView"
-        app:layout_constraintTop_toBottomOf="@id/guideline"
+        app:layout_constraintStart_toStartOf="@+id/namaTextView"
+        app:layout_constraintTop_toBottomOf="@+id/guideline"
         tools:text="Kamar No.45"/>
 
     <androidx.constraintlayout.widget.Guideline
