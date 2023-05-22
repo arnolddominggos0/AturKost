@@ -28,17 +28,22 @@
         <action
             android:id="@+id/action_daftarPenghuniFragment_to_tambahPenghuniFragment"
             app:destination="@id/tambahPenghuniFragment" />
-        <argument
-            android:name="idPenghuni"
-            app:argType="integer" />
     </fragment>
     <fragment
         android:id="@+id/detailPenghuniFragment"
         android:name="org.d3if3024.aturkost.ui.Penghuni.DetailPenghuni.DetailPenghuniFragment"
         android:label="DetailPenghuniFragment" >
         <argument
-            android:name="id"
-            app:argType="long" />
+            android:name="namaDetail"
+            app:argType="string" />
+        <argument android:name="nomorHpDetail"
+            app:argType="string" />
+        <argument
+            android:name="biayaKamarDetail"
+            app:argType="string" />
+        <argument
+            android:name="imageIdDetail"
+            app:argType="integer" />
     </fragment>
     <fragment
         android:id="@+id/tagihanFragment"

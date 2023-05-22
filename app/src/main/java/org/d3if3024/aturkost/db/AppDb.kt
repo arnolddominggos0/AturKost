@@ -5,7 +5,7 @@ import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
 
-@Database(entities = [Penghuni::class], version = 1, exportSchema = false)
+@Database(entities = [PenghuniEntity::class], version = 1, exportSchema = false)
 abstract class AppDb : RoomDatabase() {
     abstract val dao: PenghuniDao
     companion object {

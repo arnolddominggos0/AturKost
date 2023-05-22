@@ -65,26 +65,15 @@
 
 
         <Button
-            android:id="@+id/btnEdit"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="@string/edit"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/nomorhp_detail" />
-
-        <Button
             android:id="@+id/btnHapus"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:text="@string/hapus"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="@+id/btnEdit"
-            app:layout_constraintStart_toStartOf="@+id/btnEdit"
-            app:layout_constraintTop_toBottomOf="@+id/btnEdit" />
+            app:layout_constraintEnd_toEndOf="@+id/nomorhp_detail"
+            app:layout_constraintStart_toStartOf="@+id/nomorhp_detail"
+            app:layout_constraintTop_toBottomOf="@id/nomorhp_detail"/>
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

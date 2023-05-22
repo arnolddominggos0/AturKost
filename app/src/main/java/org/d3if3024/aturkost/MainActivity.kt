@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val bottomNavigationView: BottomNavigationView = binding.bottomNavigationView
+        val navView: BottomNavigationView = binding.bottomNavigationView
         navController = findNavController(R.id.myNavHostFragment)
         val appBarConfiguration = AppBarConfiguration(
             setOf(
@@ -30,8 +30,9 @@ class MainActivity : AppCompatActivity() {
         )
         NavigationUI.setupActionBarWithNavController(this, navController)
         setupActionBarWithNavController(navController, appBarConfiguration)
-        bottomNavigationView.setupWithNavController(navController)
+        navView.setupWithNavController(navController)
     }
+
     override fun onSupportNavigateUp(): Boolean {
         return navController.navigateUp()
     }

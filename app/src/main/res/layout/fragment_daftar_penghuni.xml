@@ -28,14 +28,15 @@
         android:layout_marginBottom="429dp"
         android:text="@string/belum_ada_data" />
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/floatingActionButton"
+    <Button
+        android:id="@+id/btnTambah"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp"
-        android:clickable="true"
-        tools:src="@android:drawable/ic_menu_add" />
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/tambah" />
+
+
 </RelativeLayout>

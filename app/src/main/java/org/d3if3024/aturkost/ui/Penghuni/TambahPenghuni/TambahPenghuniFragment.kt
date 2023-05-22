@@ -9,7 +9,7 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import org.d3if3024.aturkost.databinding.FragmentTambahPenghuniBinding
 import org.d3if3024.aturkost.db.AppDb
-import org.d3if3024.aturkost.db.Penghuni
+import org.d3if3024.aturkost.db.PenghuniEntity
 
 class TambahPenghuniFragment : Fragment() {
     private lateinit var binding: FragmentTambahPenghuniBinding
@@ -37,12 +37,13 @@ class TambahPenghuniFragment : Fragment() {
             val nomorHp = binding.nomorPenghuniHint.text.toString()
             val biayaKamar = binding.biayaKamarHint.text.toString()
 
-            val penghuni = Penghuni(
+            val penghuni = PenghuniEntity(
                 idPenghuni = 0,
                 nama = nama,
                 nomorKamar = nomorKamar,
                 nomorHp = nomorHp,
                 biayaKamar = biayaKamar,
+                img = 1
             )
 
             viewModel.simpanPenghuni(penghuni)
